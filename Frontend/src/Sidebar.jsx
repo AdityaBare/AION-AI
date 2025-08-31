@@ -16,7 +16,7 @@ function Sidebar() {
 
   const getAllThread = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/thread");
+      const response = await fetch("https://aion-ai-backend.onrender.com/api/thread");
       const res = await response.json();
       const filterData = res.map((thread) => ({
         threadId: thread.threadId,
@@ -81,7 +81,7 @@ function Sidebar() {
   return (
     <section className="sidebar">
       <button onClick={createNewChat}>
-        <img src="/logo3.png" alt="Gpt logo" className="logo" />
+        <img src="public/logo3.png" alt="Gpt logo" className="logo" />
 
         <i className="fa-solid fa-pen-to-square"></i>
       </button>
