@@ -16,7 +16,7 @@ function Navbar() {
 
   const handelLogout = async ()=>{
     try{
-      await axios.get("http://localhost:8080/user/logout",
+      await axios.get("https://aion-ai-backend.onrender.com/user/logout",
       { withCredentials: true }
      ).then((res)=>{
       console.log(res);

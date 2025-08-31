@@ -46,7 +46,7 @@ function Sidebar() {
   const changeThread = async (Id)=>{
      setCurrThreadId(Id);
 
-    const response = await fetch(`http://localhost:8080/api/thread/${Id}`);
+    const response = await fetch(`https://aion-ai-backend.onrender.com/api/thread/${Id}`);
 
      const res = await response.json();
    
@@ -62,7 +62,7 @@ function Sidebar() {
       method:"DELETE"
     }
 
-    const response = await fetch(`http://localhost:8080/api/thread/${Id}`,option);
+    const response = await fetch(`https://aion-ai-backend.onrender.com/api/thread/${Id}`,option);
      const res = response.json();
       setAllThreads(prev => prev.filter((e)=>e.threadId != Id));
       if(Id == currentThreadId){

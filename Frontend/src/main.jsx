@@ -25,7 +25,7 @@ function Root() {
     axios.defaults.withCredentials = true;
 
     axios
-      .get("http://localhost:8080/user")
+      .get("https://aion-ai-backend.onrender.com/user")
       .then((res) => {
         if (res.data.success) {
           console.log(res.data.data);

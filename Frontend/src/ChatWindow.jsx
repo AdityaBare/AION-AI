@@ -41,7 +41,7 @@ function ChatWindow() {
 
     try {
       // First API call
-      const response1 = await fetch("http://localhost:8080/api/chat", options);
+      const response1 = await fetch("https://aion-ai-backend.onrender.com/api/chat", options);
       const data1 = await response1.json();
       setReply(data1.reply);
 

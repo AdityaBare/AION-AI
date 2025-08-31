@@ -25,7 +25,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
    
-       await axios.post(`http://localhost:8080/user/signup`,formData, {
+       await axios.post(`https://aion-ai-backend.onrender.com/user/signup`,formData, {
       withCredentials: true 
 
       }).then((res)=>{
