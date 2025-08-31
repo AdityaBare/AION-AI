@@ -28,7 +28,7 @@ function Chat() {
       if(idx>= content.length) clearInterval(interval);
     },40);
     return ()=>clearInterval(interval);
-  },[prevChats,reply])
+  },[prevChat,reply])
   return (
     <>
        {newChat && <h1>Start a New Chat!</h1>}
