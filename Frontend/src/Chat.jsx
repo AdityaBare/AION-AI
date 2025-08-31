@@ -28,7 +28,7 @@ function Chat() {
       if(idx>= content.length) clearInterval(interval);
     },40);
     return ()=>clearInterval(interval);
-  },[prevChat,reply])
+  },[reply])
   return (
     <>
 
