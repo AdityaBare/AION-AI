@@ -35,7 +35,7 @@ export const signUp = async (req, res) => {
       httpOnly: true,
       secure: false, // ⚠️ set `true` in production with HTTPS
     sameSite: "Lax",
-      maxAge: 60 * 60 * 1000, // 1 hour
+      maxAge:60* 60 * 60 * 1000, // 1 hour
     });
 
     return res
@@ -78,7 +78,7 @@ export const login = async (req, res) => {
       httpOnly: true,
       secure: false, // ⚠️ set `true` in production with HTTPS
       sameSite: "Lax",
-      maxAge: 60 * 60 * 1000,
+      maxAge:60* 60 * 60 * 1000,
     });
 
     return res
