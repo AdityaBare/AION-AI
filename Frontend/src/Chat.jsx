@@ -28,13 +28,13 @@ function Chat() {
       if(idx>= content.length) clearInterval(interval);
     },40);
     return ()=>clearInterval(interval);
-  },[reply])
+  },[prevChats,reply])
   return (
     <>
-
+       {newChat && <h1>Start a New Chat!</h1>}
       <div className="chat">
         {prevChat?.slice(0,-1).map((chat, idx) => [
-          <div className={chat.role == "user" ? "userDiv" : "gptDiv"} key={idx}>
+          <div className={chat.role === "user" ? "userDiv" : "gptDiv"} key={idx}>
             {chat.role == "user" ? 
               <p className="userMessage">{chat.content}</p>: 
               <ReactMarkdown rehypePlugins={[rehypeHighlight]}    skipHtml={false}>{chat.content}</ReactMarkdown>

@@ -53,42 +53,6 @@ router.get("/thread/:threadId", async(req,res)=>{
     }
 });
 
-router.post("/llama", async(req,res)=>{
-  
-    const {threadId, message}= req.body;
-
-    if(!threadId || !message){
-        res.status(404).json({message:"missing required fields"});
-    }
-
-    try{
-        let thread = await Thread.findOne({threadId});
-
-          if(!thread){
-             thread = new Thread({
-            threadId,
-            title:message,
-            message:[{role:"user",content:message}]
-           });
-          }else{
-            thread.message.push({role:"user",content:message})
-          }
-
-         const assistantReplay = await getResponse(message);
-         console.log(assistantReplay);
-
-         thread.message.push({role:"assistant",content:assistantReplay});
-         thread.updatedAt=new Date;
-         await thread.save();
-
-         res.json({reply:assistantReplay});
-
-
-    }catch(err){
-        console.log(err);
-        res.status(505).json({message:"Somthing went wrong"})
-    }
-})
 
 
 

@@ -6,11 +6,11 @@ const MessageSchema = new mongoose.Schema({
         enum:["user","assistant","system"],
         required:true
     },
-    content:[{
+    content:{
         type:String,
         required:true
 
-    }],
+    },
     timestamp:{
         type:Date,
         default:Date.now

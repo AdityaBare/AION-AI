@@ -18,8 +18,7 @@ function ChatWindow() {
     setNewChat,
     prevChat,
     newChat,
-    // setReply2,
-    // reply2,
+  
    
     setPrevChat,
   } = useContext(MyContext);
