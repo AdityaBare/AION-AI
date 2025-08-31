@@ -1,0 +1,95 @@
+.sidebar {
+  background-color: #171717;
+  color: #b4b4b4;
+  height: 100vh;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+       -ms-overflow-style: none;  
+  scrollbar-width: none;  
+  overflow-x: auto;
+
+}
+
+button {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  color: #b4b4b4;
+  justify-content: space-between;
+  background-color: #171717;
+
+  border: 1px solid transparent;
+  border-radius: 14px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(100, 100, 100, 0.5);
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.logo:hover{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+.history {
+  padding: 10px;
+  height: 100%;
+}
+.history li {
+  height: 23px;
+  list-style: none;
+  font-size: 15px;
+  margin: 10px;
+  text-align: start;
+  padding-left: 10px;
+  padding-top: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.history li:hover {
+  background-color: #b4b4b45b;
+}
+
+.sign {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-top: 1px solid #b4b4b4;
+  font-size: larger;
+}
+
+.fa-trash{
+  
+  font-size: 9px; 
+  padding-right: 5px;
+}
+.fa-trash:hover{
+  opacity: 1;
+  color: red;
+   font-size: 13px; 
+  padding-right: 5px;
+}
+
+.highlight{
+      background-color: #222121;
+      border: 1px solid black;
+}

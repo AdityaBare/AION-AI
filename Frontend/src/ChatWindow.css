@@ -1,0 +1,90 @@
+.chatwindow {
+  background-color: #212121;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatInput {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBox {
+  position: relative;
+  min-width: 500px;
+  max-width: 700px;
+  display: flex;
+  height: 25px;
+
+  bottom: 5px;
+
+  align-items: center;
+  justify-content: center;
+}
+/* .inputBox  */
+@media screen and (min-width: 1200px) {
+  .inputBox {
+    width: 700px;
+  }
+}
+
+.inputBox input {
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.05);
+  border: none;
+  color: #2121213a;
+  padding: 20px;
+  font-size: 0.8rem;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px, rgba(0, 0, 0, 0.05) 0 -12px 30px,
+    rgba(0, 0, 0, 0.05) 0 42px 6px, rgba(0, 0, 0, 0.05) 0 12px 3px,
+    rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+.sendArrow i {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.05);
+  height: 18px;
+  padding: 18px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px, rgba(0, 0, 0, 0.05) 0 -12px 30px,
+    rgba(0, 0, 0, 0.05) 0 42px 6px, rgba(0, 0, 0, 0.05) 0 12px 3px,
+    rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+.sendArrow:hover {
+  opacity: 0.5;
+  border: 2px solid white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.info {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.loader{
+  margin: 20px;
+}
+.chats{
+  width: 90%;
+  display: flex;
+   overflow-y: scroll;
+    padding: 8rem;
+     -ms-overflow-style: none;  
+  scrollbar-width: none;  
+  justify-content: space-evenly;
+ height: 800px;
+
+}

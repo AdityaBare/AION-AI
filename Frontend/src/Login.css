@@ -1,0 +1,34 @@
+.login{
+    background-color: #373737;
+    height: 250px;
+    width: 350px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     border: 2px solid gray;
+     border-radius: 15px;
+     padding: 10px;
+
+    
+
+
+}
+
+.form-control{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.302);
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+.btn{
+    color: white;
+}
+.Link:hover{
+    color: rgba(72, 111, 182, 0.581);
+}

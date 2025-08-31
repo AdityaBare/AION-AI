@@ -1,0 +1,46 @@
+.chat{
+    width: 40%;
+   
+    overflow-y: scroll;
+    /* padding: 8rem; */
+     -ms-overflow-style: none;  
+  scrollbar-width: none;  
+
+}
+
+.userDiv{
+    display: flex;
+    justify-content: end;
+   font-size: 0.9rem;
+    
+}
+
+
+.userMessage{
+background-color: #323232;
+      padding: 0.6rem;
+      border-radius: 14px;
+      margin-left: 15rem;
+      max-width: 500px;
+      width: fit-content;
+
+}
+
+.gptDiv{
+
+   text-align: left;
+   font-size: 0.9rem;
+
+}
+
+.gptMessage{
+      background-color: #323232;
+      padding: 0.6rem;
+      border-radius: 14px;
+      
+      width: fit-content;
+}
+.hljs{
+     border-radius: 14px;
+}
+

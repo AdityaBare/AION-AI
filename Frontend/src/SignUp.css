@@ -1,0 +1,65 @@
+/* Signup Container */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Signup Card */
+.signup form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* adds spacing between each field */
+}
+
+/* Group each label + input + helper */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+small {
+  font-size: 12px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.error-msg {
+  font-size: 13px;
+  color: red;
+  display: none; /* default hidden */
+  margin-top: 5px;
+}
+
+/* Show error dynamically (example) */
+input:invalid + .error-msg {
+  display: block;
+}
