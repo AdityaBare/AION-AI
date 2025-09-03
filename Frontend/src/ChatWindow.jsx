@@ -70,11 +70,11 @@ function ChatWindow() {
   return (
     <div className="chatwindow">
       <Navbar />
-      {newChat && <h1>Start new chat</h1>}
-      <div className="chats">
+    
+  
         <Chat />
        
-      </div>
+
       <HashLoader color="#fff" loading={loading} className="loader" />
       <div className="chatInput">
         <div className="inputBox">

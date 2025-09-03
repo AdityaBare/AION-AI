@@ -77,14 +77,3 @@
 .loader{
   margin: 20px;
 }
-.chats{
-  width: 90%;
-  display: flex;
-   overflow-y: scroll;
-    padding: 8rem;
-     -ms-overflow-style: none;  
-  scrollbar-width: none;  
-  justify-content: space-evenly;
- height: 800px;
-
-}
