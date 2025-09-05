@@ -71,10 +71,10 @@ function ChatWindow() {
     <div className="chatwindow">
       <Navbar />
     
-  
+      <div className="chats">
         <Chat />
        
-
+      </div>
       <HashLoader color="#fff" loading={loading} className="loader" />
       <div className="chatInput">
         <div className="inputBox">
